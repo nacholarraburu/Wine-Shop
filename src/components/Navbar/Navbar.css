@@ -1,0 +1,95 @@
+.navContenedor {
+    background-color: #4466CD;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+}
+.botonesLeft {
+    background-color: crimson;
+    
+}
+.nombreTienda {
+    color:white;
+    justify-self: start;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.listadoMenu {
+    display:grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align:center;
+    width:70vw;
+    justify-content:space-evenly;
+    margin-right: 2rem;
+    
+}
+.itemMenu {
+    color:white;
+    text-decoration:none;
+    padding:0,5rem 1rem;
+}
+.itemMenu:hover {
+    background-color:transparent;
+    border-radius: 4px;
+    transition:all 0.2s ease-out;
+}
+.btn1 {
+    padding:10px 12px;
+    border-radius: 4px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    margin-left: 10px;
+    justify-content:center;
+    align-items:center;
+    
+}
+.btn2 {
+    padding: 10px 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    justify-content:center;
+    margin-left: 10px;
+    align-items:center;
+} 
+.btn3 {
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
