@@ -1,0 +1,13 @@
+.description {
+   font-family: Verdana;
+   display: flex;
+   flex-direction: column;
+   border: 1pt solid black;
+   border-radius: 15px;
+   margin: 1rem 0;
+   padding: 0.85rem;
+   width: 30%;
+   text-align: center;
+   
+
+}

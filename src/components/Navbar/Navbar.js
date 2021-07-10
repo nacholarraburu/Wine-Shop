@@ -6,7 +6,7 @@ const NavBar = (props) => {
   return (
     <nav className="navContenedor">
       <button className="btn3">
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
       </button>
       <h1 className="nombreTienda">{props.nombreDeLaTienda}</h1>
 
