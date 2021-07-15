@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import ItemList from "./ItemList";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ItemDetail from "./ItemDetail";
 
-const ItemListContainer = () => {
-  const [vinosDisplay, setVinosDisplay] = useState([]);
-
+const ItemDetailContainer = () => {
   const arrayItems = [
     {
       id: 1,
@@ -54,16 +53,27 @@ const ItemListContainer = () => {
       varietal: "Chardonnay",
     },
   ];
-  const obtenerItemsVinos = () => {
-    return new Promise((resolve, reject) => {
+
+  const [vinosToDisplay, setVinosToDisplay] = useState();
+
+  const { id: idParams } = useParams();
+
+  const obtenerItem = () => {
+    return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(arrayItems);
+        resolve(arrayItems.find((item) => item.id.toString() === idParams));
       }, 3000);
     });
   };
-  obtenerItemsVinos().then((result) => setVinosDisplay(result));
 
-  return <ItemList vinosDisplay={vinosDisplay} />;
+  useEffect(
+    () => {
+      setVinosToDisplay();
+      obtenerItem().then((result) => setVinosToDisplay(result));
+    },
+    // eslint-disable-next-line
+    [idParams]
+  );
+  return <ItemDetail vinosToDisplay={vinosToDisplay} />;
 };
-
-export default ItemListContainer;
+export default ItemDetailContainer;

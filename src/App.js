@@ -1,17 +1,26 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
-import ItemCount from "./components/ItemCount/ItemCount";
+import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Navbar nombreDeLaTienda="CATA" />
-      <ItemCount unidad={0} stock={20} />
-      <ItemListContainer />
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <ItemListContainer />
+          </Route>
+          <Route path="/item/:id">
+            <ItemDetailContainer />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
