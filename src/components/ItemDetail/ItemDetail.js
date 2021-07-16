@@ -9,7 +9,7 @@ const ItemDetail = ({ vinosToDisplay: item }) => {
       <p>{item.varietal}</p>
       <img src={"/" + item.img} alt={item.nombre} />
       <ItemCount unidad={1} stock={item.stock} />
-      <button>COMPRAR</button>
+      <button className="botonCompra">COMPRAR</button>
     </div>
   );
 };

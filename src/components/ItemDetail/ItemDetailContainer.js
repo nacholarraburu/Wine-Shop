@@ -74,6 +74,8 @@ const ItemDetailContainer = () => {
     // eslint-disable-next-line
     [idParams]
   );
-  return <ItemDetail vinosToDisplay={vinosToDisplay} />;
+  return (
+    <>{vinosToDisplay && <ItemDetail vinosToDisplay={vinosToDisplay} />}</>
+  );
 };
 export default ItemDetailContainer;

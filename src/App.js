@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar nombreDeLaTienda="CATA" />
         <Switch>
           <Route exact path="/">
             <ItemListContainer />
