@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 import { catalogo } from "../../productos/catalogo.json";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [vinosDisplay, setVinosDisplay] = useState([]);
 
   const arrayItems = catalogo;
