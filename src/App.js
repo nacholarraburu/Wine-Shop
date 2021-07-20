@@ -9,9 +9,12 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar nombreDeLaTienda="CATA" />
+        <Navbar />
         <Switch>
           <Route exact path="/">
+            <ItemListContainer />
+          </Route>
+          <Route path="/categoria/:catId">
             <ItemListContainer />
           </Route>
           <Route path="/item/:id">

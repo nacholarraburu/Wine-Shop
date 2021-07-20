@@ -1,0 +1,24 @@
+{
+    "categorias": [
+        {
+            "id":1,
+            "nombre": "Tintos"
+        },
+         {
+            "id":2,
+            "nombre": "Blancos"
+        },
+         {
+            "id":3,
+            "nombre": "Rosados"
+         },
+          {
+            "id":4,
+            "nombre": "Espumantes"
+        },
+         {
+            "id":5,
+            "nombre": "Aperitivos"
+        }
+    ]
+}

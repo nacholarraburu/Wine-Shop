@@ -1,5 +1,5 @@
 {
-    "vinos":
+    "catalogo":
     [
     {
       "id": 1,
@@ -7,7 +7,9 @@
       "precio": 800,
       "stock": 50,
       "img": "./img/padrillos.jpg",
-      "varietal": "Pinot Noir"
+      "varietal": "Pinot Noir",
+      "categoria": "1"
+      
     },
     {
       "id": 2,
@@ -15,7 +17,8 @@
       "precio": 1800,
       "stock": 100,
       "img": "./img/catena.jpg",
-      "varietal": "Malbec"
+      "varietal": "Malbec",
+      "categoria": "2"
     },
     {
       "id": 3,
@@ -23,7 +26,8 @@
       "precio": 1200,
       "stock": 80,
       "img": "./img/luigi.jpg",
-      "varietal": "Merlot"
+      "varietal": "Merlot",
+      "categoria": "3"
     },
     {
       "id": 4,
@@ -31,7 +35,8 @@
       "precio": 2500,
       "stock": 30,
       "img": "./img/rutini.jpg",
-      "varietal": "Pinot Blanc"
+      "varietal": "Pinot Blanc",
+      "categoria": "4"
     },
     {
       "id": 5,
@@ -39,7 +44,8 @@
       "precio": 500,
       "stock": 10,
       "img": "./img/sapo.jpg",
-      "varietal": "Cabernet Sauvignon"
+      "varietal": "Cabernet Sauvignon",
+      "categoria": "5"
     },
     {
       "id": 6,
@@ -47,7 +53,8 @@
       "precio": 1400,
       "stock": 45,
       "img": "./img/familia.jpg",
-      "varietal": "Chardonnay"
+      "varietal": "Chardonnay",
+      "categoria": "1"
     }
 ]
 }
