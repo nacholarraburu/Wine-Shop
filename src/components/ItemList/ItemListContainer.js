@@ -28,7 +28,7 @@ const ItemListContainer = () => {
         }, 1000);
       });
     };
-    console.log(props);
+
     obtenerItemsVinos().then((result) => setVinosDisplay(result));
   }, [catId, arrayItems]);
 

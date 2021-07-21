@@ -8,7 +8,7 @@
       "stock": 50,
       "img": "./img/padrillos.jpg",
       "varietal": "Pinot Noir",
-      "categoria": "1"
+      "categoria": 1
       
     },
     {
@@ -18,7 +18,7 @@
       "stock": 100,
       "img": "./img/catena.jpg",
       "varietal": "Malbec",
-      "categoria": "2"
+      "categoria": 2
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "stock": 80,
       "img": "./img/luigi.jpg",
       "varietal": "Merlot",
-      "categoria": "3"
+      "categoria":3
     },
     {
       "id": 4,
@@ -36,7 +36,7 @@
       "stock": 30,
       "img": "./img/rutini.jpg",
       "varietal": "Pinot Blanc",
-      "categoria": "4"
+      "categoria": 4
     },
     {
       "id": 5,
@@ -45,7 +45,7 @@
       "stock": 10,
       "img": "./img/sapo.jpg",
       "varietal": "Cabernet Sauvignon",
-      "categoria": "5"
+      "categoria": 5
     },
     {
       "id": 6,
@@ -54,7 +54,7 @@
       "stock": 45,
       "img": "./img/familia.jpg",
       "varietal": "Chardonnay",
-      "categoria": "1"
+      "categoria": 1
     }
 ]
 }
