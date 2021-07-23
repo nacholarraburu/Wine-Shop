@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ItemCount.css";
 
-const ItemCount = ({ unidad, stock }) => {
-  const [cantidad, setCantidad] = useState(unidad);
-
+const ItemCount = ({ unidad, stock, count, setCount }) => {
   const handleSumar = () => {
-    cantidad < stock && setCantidad(cantidad + 1);
+    count < stock && setCount(count + 1);
   };
 
   const handleRestar = () => {
-    cantidad > unidad && setCantidad(cantidad - 1);
+    count > unidad && setCount(count - 1);
   };
   return (
     <div className="contadorconteiner">
       <button className="boton" onClick={handleRestar}>
         -
       </button>
-      <p className="cantidadcss">{cantidad}</p>
+      <p className="cantidadcss">{count}</p>
+
       <button className="boton" onClick={handleSumar}>
         +
       </button>
