@@ -18,7 +18,7 @@ const ItemListContainer = () => {
         setTimeout(() => {
           if (catId) {
             let filtroCatalogo = arrayItems.filter(
-              (item) => item.categoria === catId
+              (item) => item.categorias === catId
             );
 
             resolve(filtroCatalogo);
